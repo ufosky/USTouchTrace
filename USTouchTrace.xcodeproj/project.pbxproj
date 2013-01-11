@@ -1,0 +1,241 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CF91986169FEC3A00086386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF91985169FEC3A00086386 /* Foundation.framework */; };
+		8CF9198B169FEC3A00086386 /* USTouchTrace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8CF9198A169FEC3A00086386 /* USTouchTrace.h */; };
+		8CF9198D169FEC3A00086386 /* USTouchTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF9198C169FEC3A00086386 /* USTouchTrace.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8CF91980169FEC3A00086386 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				8CF9198B169FEC3A00086386 /* USTouchTrace.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8CF91982169FEC3A00086386 /* libUSTouchTrace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUSTouchTrace.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF91985169FEC3A00086386 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8CF91989169FEC3A00086386 /* USTouchTrace-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "USTouchTrace-Prefix.pch"; sourceTree = "<group>"; };
+		8CF9198A169FEC3A00086386 /* USTouchTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USTouchTrace.h; sourceTree = "<group>"; };
+		8CF9198C169FEC3A00086386 /* USTouchTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USTouchTrace.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CF9197F169FEC3A00086386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF91986169FEC3A00086386 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CF91977169FEC3A00086386 = {
+			isa = PBXGroup;
+			children = (
+				8CF91987169FEC3A00086386 /* USTouchTrace */,
+				8CF91984169FEC3A00086386 /* Frameworks */,
+				8CF91983169FEC3A00086386 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CF91983169FEC3A00086386 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CF91982169FEC3A00086386 /* libUSTouchTrace.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CF91984169FEC3A00086386 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CF91985169FEC3A00086386 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CF91987169FEC3A00086386 /* USTouchTrace */ = {
+			isa = PBXGroup;
+			children = (
+				8CF9198A169FEC3A00086386 /* USTouchTrace.h */,
+				8CF9198C169FEC3A00086386 /* USTouchTrace.m */,
+				8CF91988169FEC3A00086386 /* Supporting Files */,
+			);
+			path = USTouchTrace;
+			sourceTree = "<group>";
+		};
+		8CF91988169FEC3A00086386 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CF91989169FEC3A00086386 /* USTouchTrace-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CF91981169FEC3A00086386 /* USTouchTrace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CF91990169FEC3A00086386 /* Build configuration list for PBXNativeTarget "USTouchTrace" */;
+			buildPhases = (
+				8CF9197E169FEC3A00086386 /* Sources */,
+				8CF9197F169FEC3A00086386 /* Frameworks */,
+				8CF91980169FEC3A00086386 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = USTouchTrace;
+			productName = USTouchTrace;
+			productReference = 8CF91982169FEC3A00086386 /* libUSTouchTrace.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CF91979169FEC3A00086386 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Qihe Bian";
+			};
+			buildConfigurationList = 8CF9197C169FEC3A00086386 /* Build configuration list for PBXProject "USTouchTrace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8CF91977169FEC3A00086386;
+			productRefGroup = 8CF91983169FEC3A00086386 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CF91981169FEC3A00086386 /* USTouchTrace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CF9197E169FEC3A00086386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF9198D169FEC3A00086386 /* USTouchTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8CF9198E169FEC3A00086386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8CF9198F169FEC3A00086386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CF91991169FEC3A00086386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/USTouchTrace.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "USTouchTrace/USTouchTrace-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8CF91992169FEC3A00086386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/USTouchTrace.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "USTouchTrace/USTouchTrace-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CF9197C169FEC3A00086386 /* Build configuration list for PBXProject "USTouchTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF9198E169FEC3A00086386 /* Debug */,
+				8CF9198F169FEC3A00086386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CF91990169FEC3A00086386 /* Build configuration list for PBXNativeTarget "USTouchTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF91991169FEC3A00086386 /* Debug */,
+				8CF91992169FEC3A00086386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CF91979169FEC3A00086386 /* Project object */;
+}
