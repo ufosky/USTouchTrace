@@ -8,9 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		8CF91986169FEC3A00086386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF91985169FEC3A00086386 /* Foundation.framework */; };
-		8CF9198B169FEC3A00086386 /* USTouchTrace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8CF9198A169FEC3A00086386 /* USTouchTrace.h */; };
-		8CF9198D169FEC3A00086386 /* USTouchTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF9198C169FEC3A00086386 /* USTouchTrace.m */; };
+		8CF919AA169FEEA100086386 /* UIWindow+TouchTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF919A3169FEEA100086386 /* UIWindow+TouchTrace.m */; };
+		8CF919AB169FEEA100086386 /* USDispatchWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF919A5169FEEA100086386 /* USDispatchWindow.m */; };
+		8CF919AC169FEEA100086386 /* USTouchTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF919A7169FEEA100086386 /* USTouchTrace.m */; };
+		8CF919AD169FEEA100086386 /* USWaveAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF919A9169FEEA100086386 /* USWaveAnimationView.m */; };
+		8CF919B5169FF9EF00086386 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF919B4169FF9EF00086386 /* UIKit.framework */; };
+		8CF919B6169FF9EF00086386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF91985169FEC3A00086386 /* Foundation.framework */; };
+		8CF919B8169FF9EF00086386 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF919B7169FF9EF00086386 /* CoreGraphics.framework */; };
+		8CF919BE169FF9EF00086386 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CF919BC169FF9EF00086386 /* InfoPlist.strings */; };
+		8CF919C0169FF9EF00086386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF919BF169FF9EF00086386 /* main.m */; };
+		8CF919C4169FF9F000086386 /* USAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF919C3169FF9F000086386 /* USAppDelegate.m */; };
+		8CF919C6169FF9F000086386 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF919C5169FF9F000086386 /* Default.png */; };
+		8CF919C8169FF9F000086386 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF919C7169FF9F000086386 /* Default@2x.png */; };
+		8CF919CA169FF9F000086386 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF919C9169FF9F000086386 /* Default-568h@2x.png */; };
+		8CF919CF169FFA5A00086386 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF919CE169FFA5A00086386 /* QuartzCore.framework */; };
+		8CF919D2169FFA7C00086386 /* libUSTouchTrace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF91982169FEC3A00086386 /* libUSTouchTrace.a */; };
+		8CF919DA16A001D300086386 /* USDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF919D916A001D300086386 /* USDemoViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CF919D0169FFA6C00086386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CF91979169FEC3A00086386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CF91981169FEC3A00086386;
+			remoteInfo = USTouchTrace;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8CF91980169FEC3A00086386 /* CopyFiles */ = {
@@ -19,7 +43,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				8CF9198B169FEC3A00086386 /* USTouchTrace.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,8 +52,29 @@
 		8CF91982169FEC3A00086386 /* libUSTouchTrace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUSTouchTrace.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF91985169FEC3A00086386 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8CF91989169FEC3A00086386 /* USTouchTrace-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "USTouchTrace-Prefix.pch"; sourceTree = "<group>"; };
-		8CF9198A169FEC3A00086386 /* USTouchTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USTouchTrace.h; sourceTree = "<group>"; };
-		8CF9198C169FEC3A00086386 /* USTouchTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USTouchTrace.m; sourceTree = "<group>"; };
+		8CF919A2169FEEA100086386 /* UIWindow+TouchTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+TouchTrace.h"; sourceTree = "<group>"; };
+		8CF919A3169FEEA100086386 /* UIWindow+TouchTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+TouchTrace.m"; sourceTree = "<group>"; };
+		8CF919A4169FEEA100086386 /* USDispatchWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USDispatchWindow.h; sourceTree = "<group>"; };
+		8CF919A5169FEEA100086386 /* USDispatchWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USDispatchWindow.m; sourceTree = "<group>"; };
+		8CF919A6169FEEA100086386 /* USTouchTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USTouchTrace.h; sourceTree = "<group>"; };
+		8CF919A7169FEEA100086386 /* USTouchTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USTouchTrace.m; sourceTree = "<group>"; };
+		8CF919A8169FEEA100086386 /* USWaveAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USWaveAnimationView.h; sourceTree = "<group>"; };
+		8CF919A9169FEEA100086386 /* USWaveAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USWaveAnimationView.m; sourceTree = "<group>"; };
+		8CF919B2169FF9EF00086386 /* USTouchTraceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USTouchTraceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF919B4169FF9EF00086386 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8CF919B7169FF9EF00086386 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8CF919BB169FF9EF00086386 /* USTouchTraceDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "USTouchTraceDemo-Info.plist"; sourceTree = "<group>"; };
+		8CF919BD169FF9EF00086386 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8CF919BF169FF9EF00086386 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CF919C1169FF9F000086386 /* USTouchTraceDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "USTouchTraceDemo-Prefix.pch"; sourceTree = "<group>"; };
+		8CF919C2169FF9F000086386 /* USAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USAppDelegate.h; sourceTree = "<group>"; };
+		8CF919C3169FF9F000086386 /* USAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USAppDelegate.m; sourceTree = "<group>"; };
+		8CF919C5169FF9F000086386 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8CF919C7169FF9F000086386 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8CF919C9169FF9F000086386 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8CF919CE169FFA5A00086386 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8CF919D816A001D300086386 /* USDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USDemoViewController.h; sourceTree = "<group>"; };
+		8CF919D916A001D300086386 /* USDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +86,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CF919AF169FF9EF00086386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF919D2169FFA7C00086386 /* libUSTouchTrace.a in Frameworks */,
+				8CF919CF169FFA5A00086386 /* QuartzCore.framework in Frameworks */,
+				8CF919B5169FF9EF00086386 /* UIKit.framework in Frameworks */,
+				8CF919B6169FF9EF00086386 /* Foundation.framework in Frameworks */,
+				8CF919B8169FF9EF00086386 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -49,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				8CF91987169FEC3A00086386 /* USTouchTrace */,
+				8CF919B9169FF9EF00086386 /* USTouchTraceDemo */,
 				8CF91984169FEC3A00086386 /* Frameworks */,
 				8CF91983169FEC3A00086386 /* Products */,
 			);
@@ -58,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				8CF91982169FEC3A00086386 /* libUSTouchTrace.a */,
+				8CF919B2169FF9EF00086386 /* USTouchTraceDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,7 +123,10 @@
 		8CF91984169FEC3A00086386 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CF919CE169FFA5A00086386 /* QuartzCore.framework */,
 				8CF91985169FEC3A00086386 /* Foundation.framework */,
+				8CF919B4169FF9EF00086386 /* UIKit.framework */,
+				8CF919B7169FF9EF00086386 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -73,8 +134,7 @@
 		8CF91987169FEC3A00086386 /* USTouchTrace */ = {
 			isa = PBXGroup;
 			children = (
-				8CF9198A169FEC3A00086386 /* USTouchTrace.h */,
-				8CF9198C169FEC3A00086386 /* USTouchTrace.m */,
+				8CF919A1169FEEA100086386 /* USTouchTrace */,
 				8CF91988169FEC3A00086386 /* Supporting Files */,
 			);
 			path = USTouchTrace;
@@ -84,6 +144,47 @@
 			isa = PBXGroup;
 			children = (
 				8CF91989169FEC3A00086386 /* USTouchTrace-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CF919A1169FEEA100086386 /* USTouchTrace */ = {
+			isa = PBXGroup;
+			children = (
+				8CF919A2169FEEA100086386 /* UIWindow+TouchTrace.h */,
+				8CF919A3169FEEA100086386 /* UIWindow+TouchTrace.m */,
+				8CF919A4169FEEA100086386 /* USDispatchWindow.h */,
+				8CF919A5169FEEA100086386 /* USDispatchWindow.m */,
+				8CF919A6169FEEA100086386 /* USTouchTrace.h */,
+				8CF919A7169FEEA100086386 /* USTouchTrace.m */,
+				8CF919A8169FEEA100086386 /* USWaveAnimationView.h */,
+				8CF919A9169FEEA100086386 /* USWaveAnimationView.m */,
+			);
+			path = USTouchTrace;
+			sourceTree = "<group>";
+		};
+		8CF919B9169FF9EF00086386 /* USTouchTraceDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8CF919C2169FF9F000086386 /* USAppDelegate.h */,
+				8CF919C3169FF9F000086386 /* USAppDelegate.m */,
+				8CF919D816A001D300086386 /* USDemoViewController.h */,
+				8CF919D916A001D300086386 /* USDemoViewController.m */,
+				8CF919BA169FF9EF00086386 /* Supporting Files */,
+			);
+			path = USTouchTraceDemo;
+			sourceTree = "<group>";
+		};
+		8CF919BA169FF9EF00086386 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CF919BB169FF9EF00086386 /* USTouchTraceDemo-Info.plist */,
+				8CF919BC169FF9EF00086386 /* InfoPlist.strings */,
+				8CF919BF169FF9EF00086386 /* main.m */,
+				8CF919C1169FF9F000086386 /* USTouchTraceDemo-Prefix.pch */,
+				8CF919C5169FF9F000086386 /* Default.png */,
+				8CF919C7169FF9F000086386 /* Default@2x.png */,
+				8CF919C9169FF9F000086386 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -108,6 +209,24 @@
 			productReference = 8CF91982169FEC3A00086386 /* libUSTouchTrace.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		8CF919B1169FF9EF00086386 /* USTouchTraceDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CF919CB169FF9F000086386 /* Build configuration list for PBXNativeTarget "USTouchTraceDemo" */;
+			buildPhases = (
+				8CF919AE169FF9EF00086386 /* Sources */,
+				8CF919AF169FF9EF00086386 /* Frameworks */,
+				8CF919B0169FF9EF00086386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CF919D1169FFA6C00086386 /* PBXTargetDependency */,
+			);
+			name = USTouchTraceDemo;
+			productName = USTouchTraceDemo;
+			productReference = 8CF919B2169FF9EF00086386 /* USTouchTraceDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -130,20 +249,67 @@
 			projectRoot = "";
 			targets = (
 				8CF91981169FEC3A00086386 /* USTouchTrace */,
+				8CF919B1169FF9EF00086386 /* USTouchTraceDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CF919B0169FF9EF00086386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF919BE169FF9EF00086386 /* InfoPlist.strings in Resources */,
+				8CF919C6169FF9F000086386 /* Default.png in Resources */,
+				8CF919C8169FF9F000086386 /* Default@2x.png in Resources */,
+				8CF919CA169FF9F000086386 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CF9197E169FEC3A00086386 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF9198D169FEC3A00086386 /* USTouchTrace.m in Sources */,
+				8CF919AA169FEEA100086386 /* UIWindow+TouchTrace.m in Sources */,
+				8CF919AB169FEEA100086386 /* USDispatchWindow.m in Sources */,
+				8CF919AC169FEEA100086386 /* USTouchTrace.m in Sources */,
+				8CF919AD169FEEA100086386 /* USWaveAnimationView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CF919AE169FF9EF00086386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF919C0169FF9EF00086386 /* main.m in Sources */,
+				8CF919C4169FF9F000086386 /* USAppDelegate.m in Sources */,
+				8CF919DA16A001D300086386 /* USDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CF919D1169FFA6C00086386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CF91981169FEC3A00086386 /* USTouchTrace */;
+			targetProxy = 8CF919D0169FFA6C00086386 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CF919BC169FF9EF00086386 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CF919BD169FF9EF00086386 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8CF9198E169FEC3A00086386 /* Debug */ = {
@@ -166,7 +332,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -185,7 +351,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -215,6 +381,37 @@
 			};
 			name = Release;
 		};
+		8CF919CC169FF9F000086386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "USTouchTraceDemo/USTouchTraceDemo-Prefix.pch";
+				INFOPLIST_FILE = "USTouchTraceDemo/USTouchTraceDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8CF919CD169FF9F000086386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "USTouchTraceDemo/USTouchTraceDemo-Prefix.pch";
+				INFOPLIST_FILE = "USTouchTraceDemo/USTouchTraceDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -232,6 +429,14 @@
 			buildConfigurations = (
 				8CF91991169FEC3A00086386 /* Debug */,
 				8CF91992169FEC3A00086386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8CF919CB169FF9F000086386 /* Build configuration list for PBXNativeTarget "USTouchTraceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF919CC169FF9F000086386 /* Debug */,
+				8CF919CD169FF9F000086386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
